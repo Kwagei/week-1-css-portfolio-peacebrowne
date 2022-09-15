@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #eeecb9;
+}
+
+main{
+    width: 90%;
+    height: 530px;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main section{
+    width: 45%;
+    height: 90%;
+}
+
+#contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contacts-items{
+    width: 90%;
+    padding: 1rem 0;
+    background-color: #fff;
+    display: flex;
+    margin-left: 1.7rem;
+    border-radius: 7px;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    background-color: #c7def0;
+    color: white;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    border-radius: 1rem;
+}
+
+.contacts-items:hover .icon{
+    background-color: rgb(114, 218, 231);
+}
+
+.contacts-items-text{
+    width: 60%;
+    height: 100%;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #5e5e5e;
+}
+.contacts-items h2,.contacts-items p{
+    margin: 0;
+}
+
+#social-medias{
+    width: 120px;
+    justify-content: space-evenly;
+    margin-right: auto;
+    background-color: none;
+}
+
+#message{
+    border-radius: 8px;
+}
+
+form{
+    width: 90%;
+    height: 87%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+form input, textarea{
+    width: 90%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: 0.375rem;
+    outline: none;
+}
+
+form button{
+    width: 50%;
+    padding: 0.375rem 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #c7def0;
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+    margin: 0px auto;
+    font-weight: bold;
+}
+
+form button:hover{
+    background-color: rgb(114, 218, 231);
+}
+form input:hover, textarea:hover{
+    background-color: #e4e0e0;
+}
+
+
+
+#message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#name-email{
+    width: 90%;
+    height: 50px;
+    background-color: violet;
+    margin: 0 auto;
+}
+
+#name-email input{
+    width: 45%;
+}
