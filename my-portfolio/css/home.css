@@ -8,10 +8,9 @@
 }
 #welcome-msg{
     width: 100%;
-    padding: 5rem 0;
+    padding: 4rem 0;
     margin-top: 0.1em;
     position: relative;
-    opacity: 55%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,41 +19,42 @@
 .wlc{
     width: 50%;
     height: 400px;
-    background-color: #fff;
     box-shadow: 1px 1px 3px 1px black;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     border-radius: 20px;
+    color: #1F2235;
+}
+
+main{
+    height: 70vh;
 }
 
 .wlc h1{
     font-size: 3rem;
     font-weight: 400;
-    text-align: center;
+    text-align: left;
     text-transform: capitalize;
-    color: #5e5e5e;
     margin: 0px;
-    margin-right: 5rem;
+    margin-left: 2rem;
 }
 
 .wlc p{
-    width: 50%;
-    margin-right: 5rem;
+    width: 67%;
+    margin-left: 2rem;
 }
 
 #img{
     position: absolute;
     width: 300px;
     height: 300px;
-    background-color: yellow;
     box-shadow: 1px 1px 3px 1px black;
     border-top-right-radius: 4rem;
     border-top-left-radius: 4rem;
     border-bottom-right-radius: 4rem;
     border-bottom-left-radius: 4rem;
-    right: 16rem;
+    right: 13rem;
     display: flex;
     justify-content: center;
     align-items: center;
