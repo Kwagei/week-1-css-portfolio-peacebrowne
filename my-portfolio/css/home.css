@@ -88,21 +88,25 @@ main{
 }
 
 /* mobile view */
-@media only screen and (max-width: 701px ) and (min-width: 320px) {
+@media only screen and (max-width: 480px ) and (min-width: 320px) {
 
     main{
-        height: 65vh;
+        height: 60vh;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
     }
     #img {
         width: 188px;
         height: 202px;
-        top: 0.5rem;
+        top: -1.8rem;
         left: 26%;
     }
     .wlc {
-        margin-top: 2rem;
+        /* margin-top: 2rem; */
         padding: 5rem 2rem;
         width: 80%;
+        background-color: coral;
     }
     #welcome-msg {
         margin-top: 2rem;
