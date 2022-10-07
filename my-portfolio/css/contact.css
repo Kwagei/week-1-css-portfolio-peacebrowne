@@ -10,11 +10,13 @@
 main{
     width: 90%;
     height: 67vh;
-    margin: 1rem auto;
+    margin: 7rem auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding-bottom: 1rem;
+    box-shadow: 0px 0 30px #1F2235;
+    border-radius: 20px;
 }
 
 main section{
@@ -39,7 +41,7 @@ main section{
 .icon{
     width: 50px;
     height: 50px;
-    background-color: #c7def0;
+    background-color: rgb(185, 185, 185);
     color: white;
     margin-left: 1rem;
     display: flex;
@@ -60,6 +62,10 @@ main section{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    color: #505050;
+}
+
+.contacts-items-text h2{
     color: #1F2235;
 }
 .contacts-items h2,.contacts-items p{
@@ -72,33 +78,26 @@ main section{
     width: 120px;
     justify-content: space-evenly;
     margin-right: auto;
-    background-color: none;
+}
+#social-medias a{
+    font-size: 25px;
+    color: #1F2235;
 }
 
-#message{
-    border-radius: 8px;
-}
+
 
 form{
     width: 90%;
-    /* height: 87%; */
-    /* display: flex;
-    flex-direction: column; */
-    /* justify-content: space-evenly; */
-    /* align-items: center;
-    background-color: rebeccapurple;
-    box-shadow: 1px 1px 3px 1px black; */
-
 }
 
 form input, form textarea{
     width: 90%;
-    padding: 0.375rem 0.75rem;
+    padding: 0.8rem 0.75rem;
     font-size: 1rem;
     font-weight: 400;
     color: #1F2235;
     background-color: #fff;
-    border: 1px solid #ced4da;
+    border: 1px solid #ced4da;    
     border-radius: 0.375rem;
     outline: none;
 }
@@ -121,22 +120,32 @@ form button{
 }
 
 ::placeholder{
-    color: #1F2235;
+    color: #505050;
 }
 
 form button:hover{
     background-color: #171a2a;
+    border: #171a2a;
 }
 form input:hover, textarea:hover{
-    background-color: #e4e0e0;
+    border: 1px solid #171a2a;
 }
 
 
 
 #message{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 8px;
+}
+
+#message h3{
+    width: 90%;
+    background-color: tomato;
+    text-align: left;
+    padding: 1rem 0px;
 }
 
 #name-email{
@@ -147,4 +156,57 @@ form input:hover, textarea:hover{
 
 #name-email input{
     width: 45%;
+}
+
+@media only screen and (max-width: 1024px)  and (min-width: 700px) {
+
+    #contacts{
+        width: 100%;
+        padding-bottom: 3rem;
+    }
+
+    #message{
+        width: 100%;
+    }
+    main{
+        height: 100vh;
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width: 701px ) and (min-width: 320px) {
+    #contacts{
+        width: 100%;
+        padding-bottom: 3rem;
+    }
+    main{
+        height: 100vh;
+        flex-direction: column;
+        padding: 0px;
+        margin: 3rem auto;
+    }
+
+    .contacts-items {
+        width: 100%;
+        margin: 0px;
+        font-size: small;
+    }
+    form{
+        width: 100%;
+    }
+
+    form input, form textarea{
+        width: 100%;
+    }
+
+    #message{
+        width: 100%;
+    }
+
+    form button{
+        width: 90%;
+        margin: 0px 1rem;
+    }
+
 }

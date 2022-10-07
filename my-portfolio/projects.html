@@ -1,12 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">    
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="./css/general.css">
     <link rel="stylesheet" href="./css/projects.css">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <title>Projects</title>
 </head>
 <body>
+    <aside>
+        <div class="aside-top">
+            
+            <div class="dropdown">
+                <ion-icon name="menu"></ion-icon>
+                <nav class="aside-nav"> 
+                    <ul>
+                        <li>
+                            <a href="home.html"  class="active">Home</a>
+                        </li>
+                        <li>
+                            <a href="./projects.html">Projects</a>
+                        </li>
+                        <li>
+                            <a href="./gallery.html">Gallery</a>
+                        </li> 
+                        <li>
+                            <a href="./contact.html">Contacts</a>
+                        </li>
+                    </ul>
+                </nav> 
+            </div>
+            <div class="logo">
+                <img src="../img/logo.png" alt="Logo">
+            </div>
+        </div>
+
+    </aside>
+
     <header>
         <div class="logo">
             <!-- <h4>Peacebrowne</h4> -->
@@ -27,25 +60,24 @@
                     <a href="./contact.html">Contacts</a>
                 </li>
             </ul>
-            <div id="get-started">
-                <button>Get Started</button>
-            </div>
         </nav>
    </header>
    <main>
-       
+    <div class="intro">
+        <h3>Projects</h3>
+    </div>
     <section class="projects">
 
-      <a href="projects-details.html">
-        <div class="project">
-            <div class="project-info">
-                <h4>Project-Name:</h4>
+        <a href="projects-details.html">
+            <div class="project">
+                <div class="project-info">
+                    <h4>SILKROAD REAL ESTATE</h4>
+                </div>
+                <div class="project-img">
+                    <img src="../img/silkroad.png" alt="">
+                </div>
             </div>
-            <div class="project-img">
-                <img src="." alt="">
-            </div>
-        </div>
-      </a>
+        </a>
 
       <a href="#">
 
@@ -102,70 +134,11 @@
             </div>
         </div>
        </a>
-       <a href="#">
-        <div class="project">
-            <div class="project-info">
-                <h4>Project-Name:</h4>
-            </div>
-            <div class="project-img">
-                <img src="" alt="">
-            </div>
-        </div>
-       </a>
-       <a href="#">
-        <div class="project">
-            <div class="project-info">
-                <h4>Project-Name:</h4>
-            </div>
-            <div class="project-img">
-                <img src="" alt="">
-            </div>
-        </div>
-       </a>
-       <a href="#">
-        <div class="project">
-            <div class="project-info">
-                <h4>Project-Name:</h4>
-            </div>
-            <div class="project-img">
-                <img src="" alt="">
-            </div>
-        </div>
-       </a>
-       <a href="#">
-        <div class="project">
-            <div class="project-info">
-                <h4>Project-Name:</h4>
-            </div>
-            <div class="project-img">
-                <img src="" alt="">
-            </div>
-        </div>
-       </a>
-       <a href="#">
-        <div class="project">
-            <div class="project-info">
-                <h4>Project-Name:</h4>
-            </div>
-            <div class="project-img">
-                <img src="" alt="">
-            </div>
-        </div>
-       </a>
-       <a href="#">
-        <div class="project">
-            <div class="project-info">
-                <h4>Project-Name:</h4>
-            </div>
-            <div class="project-img">
-                <img src="" alt="">
-            </div>
-        </div>
-       </a>
-
         
     </section>
-
+    <div class="intro pagination">
+        <h3><< Pagination >></h3>
+    </div>
 </main>
 
     <footer>
@@ -187,7 +160,7 @@
             </ul>
 
             <ul class="links-services">
-                <li style="font-weight:bold; list-style-type: none; margin-left: -2rem;" >
+                <li class="title">
                     Services:
                 </li>
                 <li>
@@ -205,7 +178,7 @@
             </ul>
 
             <ul class="links-services">
-                <li style="font-weight:bold; list-style-type: none; margin-left: -2rem;" >
+                <li class="title">
                     Skills:
                 </li>
                 <li>

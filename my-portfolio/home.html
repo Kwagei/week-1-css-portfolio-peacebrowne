@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/general.css">
     <title>My Portfolio Page</title>
@@ -8,7 +11,34 @@
 <body>
 
     <aside>
+        <div class="aside-top">
+            
+            <div class="dropdown">
+                <ion-icon name="menu"></ion-icon>
+                <nav class="aside-nav"> 
+                    <ul>
+                        <li>
+                            <a href="#"  class="active">Home</a>
+                        </li>
+                        <li>
+                            <a href="./projects.html">Projects</a>
+                        </li>
+                        <li>
+                            <a href="./gallery.html">Gallery</a>
+                        </li> 
+                        <li>
+                            <a href="./contact.html">Contacts</a>
+                        </li>
+                    </ul>
+                </nav> 
+            </div>
+            <div class="logo">
+                <img src="../img/logo.png" alt="Logo">
+            </div>
+        </div>
+
         
+
     </aside>
 
    <header>
@@ -31,9 +61,6 @@
                         <a href="./contact.html">Contacts</a>
                     </li>
                 </ul>
-            <div id="get-started">
-                <button>Get Started</button>
-            </div>
         </nav>
    </header>
 
@@ -54,7 +81,6 @@
                 <img src="" alt="Peace Browne">
             </div>
         </section>
-
 
     </main>
 
@@ -81,7 +107,7 @@
             </ul>
 
             <ul class="links-services">
-                <li style="font-weight:bold; list-style-type: none; margin-left: -2rem;" >
+                <li class="title" >
                     Services:
                 </li>
                 <li>
@@ -99,7 +125,7 @@
             </ul>
 
             <ul class="links-services">
-                <li style="font-weight:bold; list-style-type: none; margin-left: -2rem;" >
+                <li class="title"  >
                     Skills:
                 </li>
                 <li>
@@ -132,6 +158,6 @@
         </section>
     </footer>
 
-
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 </html>

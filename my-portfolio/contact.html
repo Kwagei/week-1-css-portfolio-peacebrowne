@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/general.css">
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="../../fontawesome-free-5.10.2-web/css/all.min.css">
     <title>My Contact Page</title>
 </head>
 <body>
-    
+    <aside>
+        <div class="aside-top">
+            
+            <div class="dropdown">
+                <ion-icon name="menu"></ion-icon>
+                <nav class="aside-nav"> 
+                    <ul>
+                        <li>
+                            <a href="home.html"  class="active">Home</a>
+                        </li>
+                        <li>
+                            <a href="./projects.html">Projects</a>
+                        </li>
+                        <li>
+                            <a href="./gallery.html">Gallery</a>
+                        </li> 
+                        <li>
+                            <a href="./contact.html">Contacts</a>
+                        </li>
+                    </ul>
+                </nav> 
+            </div>
+            <div class="logo">
+                <img src="../img/logo.png" alt="Logo">
+            </div>
+        </div>
+
+    </aside>
+
    <header>
         <div class="logo">
             <img src="../img/logo.png" alt="Logo">
@@ -39,7 +70,7 @@
        <section id="contacts">
             <div class="contacts-items">
                <div class="icon">
-                   <i class="fa fa-map-marker-alt"></i>
+                <ion-icon name="menu"></ion-icon>
                </div>
                <div class="contacts-items-text">
                     <h2>Locations:</h2>
@@ -48,7 +79,7 @@
             </div>
             <div class="contacts-items">
                 <div class="icon">
-                    <i class="fa fa-envelope"></i>
+                    <ion-icon name="mail"></ion-icon>
                 </div>
                 <div class="contacts-items-text">
                     <h2>Email:</h2>
@@ -57,7 +88,7 @@
             </div>
             <div class="contacts-items">
                 <div class="icon">
-                    <i class="fa fa-mobile"></i>
+                    <ion-icon name="call"></ion-icon>
                 </div>
                 <div class="contacts-items-text">
                     <h2>Call:</h2>
@@ -65,13 +96,13 @@
                 </div>
             </div>           
             <div class="contacts-items" id="social-medias">
-                <div class="fab fa-facebook-square"></div>
-                <div class="fab fa-instagram"></div>
-                <div class="fab fa-facebook-messenger"></div>
-                <div class="fab fa-twitter"></div>
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
             </div>
        </section>
        <section id="message">
+           <!-- <h3>Message</h3> -->
            <form action="">
                    <input type="text" placeholder="Your Name"> <br><br>
                    <input type="text" placeholder="Your Email"> <br><br>
@@ -102,7 +133,7 @@
             </ul>
 
             <ul class="links-services">
-                <li style="font-weight:bold; list-style-type: none; margin-left: -2rem;" >
+                <li style="font-weight:bold; list-style-type: none; margin-left: -2rem; color: #1F2235;" >
                     Services:
                 </li>
                 <li>
@@ -120,7 +151,7 @@
             </ul>
 
             <ul class="links-services">
-                <li style="font-weight:bold; list-style-type: none; margin-left: -2rem;" >
+                <li style="font-weight:bold; list-style-type: none; margin-left: -2rem; color: #1F2235;" >
                     Skills:
                 </li>
                 <li>
@@ -152,6 +183,7 @@
            <h5>INSPIRED BY: KIT</h5>
         </section>
     </footer>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
 </body>
 </html>
