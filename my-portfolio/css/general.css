@@ -24,7 +24,7 @@ header{
     z-index: 1;
 }
 
-.active{
+.active,.aside-active{
     font-weight: bold;
     color: #9acdf5;
 }
@@ -120,6 +120,7 @@ footer{
     justify-content: space-between;
     margin: 0px 0.7rem;
     padding: 0px;
+    margin-bottom: auto;
 }
 .links-services li{
     color: white;
@@ -226,6 +227,10 @@ aside ion-icon:hover aside .logo{
     display: none;
 }
 
+.skill-extra{
+    display: none;
+}
+
 /* tablet view */
 @media only screen and (max-width: 1024px)  and (min-width: 700px) {
     
@@ -290,8 +295,7 @@ aside ion-icon:hover aside .logo{
         bottom: 0;
     }
     #extra{
-        margin-top: 0;
-        margin-left: 0;
+       display: none;
     }
     footer{
         background-color: #1F2235;
@@ -302,6 +306,7 @@ aside ion-icon:hover aside .logo{
        flex-direction: row;
        width: 100%;
        padding-bottom: 1rem;
+       justify-content: space-around;
     }
     #links li{
         margin: 0px 0.1rem;
@@ -315,5 +320,9 @@ aside ion-icon:hover aside .logo{
     .menu ul li a{
         color: white;
     }
-    
+    .active,#aside-active{
+        font-weight: bold;
+        color: #9acdf5;
+    }
+
 }
