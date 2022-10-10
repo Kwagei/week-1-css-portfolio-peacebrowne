@@ -185,6 +185,7 @@ form input:hover, textarea:hover{
         padding-bottom: 3rem;
     } */
     main{
+        background-color: coral;
         height: 100vh;
         flex-direction: column;
         padding: 0px;
