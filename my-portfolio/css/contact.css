@@ -185,7 +185,6 @@ form input:hover, textarea:hover{
         padding-bottom: 3rem;
     } */
     main{
-        background-color: coral;
         height: 100vh;
         flex-direction: column;
         padding: 0px;
@@ -215,7 +214,7 @@ form input:hover, textarea:hover{
     form button {
         width: 90%;
         margin: 0px 1rem;
-        padding: 0.9rem;
+        padding: 0.5rem;
     }
 
     #social-medias {
