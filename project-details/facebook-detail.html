@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">    
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="./css/general.css">
-    <link rel="stylesheet" href="./css/projects.css">
-    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-    <title>Projects</title>
+    <link rel="stylesheet" href="../my-portfolio/css/general.css">
+    <link rel="stylesheet" href="../my-portfolio/css/projects-details.css">
+    <title>Projects Details</title>
 </head>
 <body>
     <aside>
@@ -19,7 +17,7 @@
                 <nav class="aside-nav"> 
                     <ul>
                         <li>
-                            <a  href="home.html">Home</a>
+                            <a href="home.html"  class="active">Home</a>
                         </li>
                         <li>
                             <a id="aside-active" href="./projects.html">Projects</a>
@@ -39,7 +37,6 @@
 
     <header>
         <div class="logo">
-            <!-- <h4>Peacebrowne</h4> -->
             <img src="../img/logo.png" alt="Logo">
         </div>
         <nav>
@@ -48,99 +45,54 @@
                     <a href="./home.html">Home</a>
                 </li>
                 <li>
-                    <a href="./projects.html"  class="active">Projects</a>
+                    <a id="aside-active" href="./projects.html">Projects</a>
                 </li>
-               <li>
+                <li>
                     <a href="./contact.html">Contacts</a>
                 </li>
             </ul>
+            <!-- <div id="get-started">
+                <button>Get Started</button>
+            </div> -->
         </nav>
-   </header>
-   <main>
-    <div class="intro">
-        <h3>Projects</h3>
-    </div>
-    <section class="projects">
+    </header>
 
-        <a href="../project-details/silkroad-details.html">
-            <div class="project">
-                <div class="project-info">
-                    <h4>SILKROAD REAL ESTATE</h4>
-                </div>
-                <div class="project-img">
-                    <img src="../img/silkroad.png" alt="">
-                </div>
-            </div>
-        </a>
-
-      <a href="../project-details/facebook-detail.html">
-
-        <div class="project">
-            <div class="project-info">
-                <h4>Facebook Login</h4>
-            </div>
-            <div class="project-img">
+    <main>
+        <div class="intro">
+            <h3>Project Details</h3>
+            <div class="active-section"><span class="active act">Projects /</span> <span>Project Details</span></div>
+        </div>
+        <section class="project-info">
+            <div class="projects-items projects-img">
                 <img src="../img/fb.png" alt="">
             </div>
-        </div>
-      </a>
+            <div class="projects-items info">
+                <h3>Project Information</h3> <br>
+                <hr> <br>
+                <ul>
+                    <li><span class="specs">Category:</span> <span class="spec-info"> Web design</span></li>
+                    <li><span class="specs">Client:</span> <span class="spec-info">KWAGEI GROUP</span></li>
+                    <li><span class="specs">Project date:</span> <span class="spec-info">05 October, 2022</span></li>
+                    <li><span class="specs">Project URL:</span> <a href="https://kwagei.github.io/week-5-hackathon-facebook-login-page-peacebrowne/">facebook-login.com</a></li>
 
-      <a href="#">
-        <div class="project">
-            <div class="project-info">
-                <h4>Project-Name:</h4>
-            </div>
-            <div class="project-img">
-                <img src="" alt="">
-            </div>
-        </div>
-      </a>
+                </ul>
 
-       <a href="#">
-        <div class="project">
-            <div class="project-info">
-                <h4>Project-Name:</h4>
-            </div>
-            <div class="project-img">
-                <img src="" alt="">
-            </div>
-        </div>
-       </a>
+                <h2>Project Information</h2> <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet hic magnam iure minima sit dolorum, blanditiis, dicta atque eius dignissimos reprehenderit consectetur provident necessitatibus, ex odio asperiores tenetur voluptates perspiciatis.</p>
+                <br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet hic magnam iure minima sit dolorum, blanditiis, dicta atque eius dignissimos reprehenderit consectetur provident necessitatibus, ex odio asperiores tenetur voluptates perspiciatis.</p>
 
-       <a href="#">
-        <div class="project">
-            <div class="project-info">
-                <h4>Project-Name:</h4>
             </div>
-            <div class="project-img">
-                <img src="" alt="">
-            </div>
+        </section>
+        <div class="intro pagination">
+            <h3><< Slides >></h3>
         </div>
-       </a>
-
-       <a href="#">
-        <div class="project">
-            <div class="project-info">
-                <h4>Project-Name:</h4>
-            </div>
-            <div class="project-img">
-                <img src="" alt="">
-            </div>
-        </div>
-       </a>
-        
-    </section>
-    <div class="intro pagination">
-        <h3><< Pagination >></h3>
-    </div>
-</main>
+    </main>
 
     <footer>
-       
         <section class="menu">
             <ul class="links-services" id="links">
                 <li>
-                    <a href="./home.html">Home</a>
+                    <a href="#">Home</a>
                 </li>
                 <li>
                     <a href="./projects.html">Projects</a>
