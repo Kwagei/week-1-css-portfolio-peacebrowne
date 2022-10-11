@@ -60,6 +60,12 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
+}
+
+#img ion-icon{
+    font-size: 10rem;
+    color: #1F2235;
 }
 
 .img img{
