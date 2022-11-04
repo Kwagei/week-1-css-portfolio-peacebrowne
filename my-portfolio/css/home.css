@@ -68,9 +68,10 @@ main{
     color: #1F2235;
 }
 
-.img img{
-    width: 50%;
-    height: 50%;
+#img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }
 
 @media only screen and (min-width: 700px) and (max-width: 1024px) {
@@ -105,7 +106,7 @@ main{
         width: 188px;
         height: 202px;
         top: -1.8rem;
-        left: 26%;
+        left: 22%;
     }
     .wlc {
         /* margin-top: 2rem; */
