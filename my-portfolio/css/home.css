@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+#welcome-msg{
+    width: 100%;
+    padding: 4rem 0;
+    margin-top: 0.1em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wlc{
+    width: 55%;
+    padding: 9rem 4rem;
+    box-shadow: 0px 0 30px #1F2235;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    color: #1F2235;
+}
+
+main{
+    /* height: 71vh; */
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.wlc h1{
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: left;
+    text-transform: capitalize;
+    margin: 0px;
+    margin-left: 2rem;
+}
+
+.wlc p{
+    width: 67%;
+    margin-left: 2rem;
+}
+
+#img{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0px 0 30px rgb(18 66 101 / 20%);
+    border-top-right-radius: 4rem;
+    border-top-left-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+    right: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+#img ion-icon{
+    font-size: 10rem;
+    color: #1F2235;
+}
+
+#img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
+    .wlc {
+        width: 67%;
+        padding: 5rem 3rem;
+    }
+    .wlc h1{
+        font-size: 2rem;
+        margin-left: 1.9rem;
+    }
+    #img {
+        width: 188px;
+        height: 202px;
+        right: 3rem;
+    }
+
+    #welcome-msg {
+        margin-top: 3.1em;
+    }
+}
+
+/* mobile view */
+@media only screen and (max-width: 480px ) and (min-width: 320px) {
+
+    main{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+    #img {
+        width: 188px;
+        height: 202px;
+        top: -1.8rem;
+        left: 22%;
+    }
+    .wlc {
+        /* margin-top: 2rem; */
+        padding: 5rem 2rem;
+        width: 80%;
+    }
+    #welcome-msg {
+        margin-top: 2rem;
+    }
+    .wlc h1{
+        font-size: 1.8rem;
+        margin-left: 1.9rem;
+        margin-top: 2.9rem;
+    }
+}

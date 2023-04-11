@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+body{
+    /* background-color: #1F2235; */
+    background-color: whitesmoke;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header */
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #1F2235;
+    transition: all 0.5s;
+    padding: 16px 0;
+    border-bottom: 1px solid #9acdf5;
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+
+.active,.aside-active{
+    font-weight: bold;
+    color: #9acdf5;
+}
+
+.logo{
+    width: 200px;
+    height: 40px;
+    margin-left: 1rem;
+    box-shadow: 1px 1px 3px 1px black;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    height: 40px;
+    margin-right: -5rem;
+    transition: all 0.5s;
+}
+header ul{
+    margin: 0;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: white;
+}
+header ul li a:hover{
+    font-weight: bold;
+    color: #9acdf5;
+}
+
+#get-started{
+    width: 130px;
+    height: 90%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#get-started button{
+    padding: 7px 1rem;
+    background-color: rgb(114, 218, 231);
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 1px 1px 3px 1px black;
+    cursor: pointer;
+}
+
+/* footer */
+footer{
+    height: auto;
+    width: 100%;
+    padding: 1rem 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    font-size: x-small;
+    position: relative;
+    background-color: #1F2235;
+}
+
+.menu{
+    width: 60%;
+    /* height: 100%; */
+    margin-top: 0.1em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.menu .links-services {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0px 0.7rem;
+    padding: 0px;
+    margin-bottom: auto;
+}
+.links-services li{
+    color: white;
+
+}
+.title{
+    font-weight:bold; 
+    list-style-type: none; 
+    margin-left: -2rem;
+    color: white;
+}
+.menu ul{
+    margin: 0px 1rem;
+}
+.menu ul li{
+    margin: 3px;
+    text-transform: capitalize;
+}
+.menu ul li a{
+    color: white;
+   text-decoration: none;
+}
+.menu ul li a:hover{
+    font-weight: bold;
+    color: #9acdf5;
+}
+#links{
+    padding: 0;
+}
+#links li{
+    list-style-type: none;
+    margin-right: auto;
+}
+#links li a{
+    font-weight: 700;
+    color: white;
+
+}
+#extra{
+    margin-top: 1.5rem;
+    margin-left: -5rem;
+}
+
+.kit{
+    width: 10rem;
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    justify-self: flex-end;
+    position: absolute;
+    left: 0px;
+    color: white;
+}
+aside{
+    display: none;
+    width: 100%;
+    padding: 0rem 0.2rem;
+    position: absolute;
+    top: 0%;
+    background-color: #1F2235;
+    z-index: 1;
+    position: relative;
+}
+
+.aside-nav{
+    position: absolute;
+    width: 100%;
+    display: none;
+    left: 0; 
+    background-color: #1F2235;
+    border-top: 1px solid white;
+}
+.aside-nav ul{
+    width: 100%;
+    padding: 3rem;
+}
+
+.aside-nav ul li{
+    padding: 1rem 0px;
+    list-style-type: none;
+}
+
+.aside-nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.aside-top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.5s;
+    padding: 0.7rem 0.7rem;
+}
+
+.aside-top ion-icon{
+    font-size: 30px;
+    margin: auto 0px;
+    color: white;
+}
+
+aside ion-icon:hover aside .logo{
+    display: none;
+}
+
+.skill-extra{
+    display: none;
+}
+
+/* tablet view */
+@media only screen and (max-width: 1280px)  and (min-width: 601px) {
+    
+    aside{
+        display: block;
+    }
+    header{
+        display: none;
+    }
+    .logo {
+        width: 150px;
+        height: 30px;
+    }
+
+    .menu{
+        width: 70%;
+        font-size: x-small;
+    }
+    #extra{
+        margin-top: 1.5rem;
+        margin-left: -1.5rem;
+    }
+    aside .dropdown:hover .aside-nav{
+        display: block;
+    } 
+}
+
+
+/* mobile view */
+@media only screen and (max-width: 480px ) and (min-width: 320px) {
+
+    aside{
+        display: block;
+        background-color: #1F2235;
+    }
+   
+    header{
+        display: none;
+    }
+   
+    .logo {
+        width: 150px;
+        height: 30px;
+    }
+    .dropdown:hover .aside-nav{
+        display: block;
+        width: 100%;
+    } 
+
+    .menu{
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-bottom: 2rem;
+        width: 90%;
+    }
+    .menu li{
+        color: white;
+    }
+    .kit{
+        bottom: 0;
+    }
+    #extra{
+       display: none;
+    }
+    footer{
+        background-color: #1F2235;
+        padding-top: 1rem;
+    }
+    #links{
+       display: flex;
+       flex-direction: row;
+       width: 100%;
+       padding-bottom: 1rem;
+       justify-content: space-around;
+    }
+    #links li{
+        margin: 0px 0.1rem;
+    }
+
+    .title{
+        color: white;
+        margin-left: -4rem;
+    }
+
+    .menu ul li a{
+        color: white;
+    }
+    .active,#aside-active{
+        font-weight: bold;
+        color: #9acdf5;
+    }
+
+}
